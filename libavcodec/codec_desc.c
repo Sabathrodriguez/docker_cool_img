@@ -48,6 +48,13 @@ static const AVCodecDescriptor codec_descriptors[] = {
         .props     = AV_CODEC_PROP_LOSSY | AV_CODEC_PROP_REORDER,
         .profiles  = NULL_IF_CONFIG_SMALL(ff_mpeg2_video_profiles),
     },
+    { /* COOL description */
+        .id        = AV_CODEC_ID_COOL,
+        .type      = AVMEDIA_TYPE_VIDEO,
+        .name      = "cool",
+        .long_name = NULL_IF_CONFIG_SMALL("COOL image (CS 3505 Spring 2021)"),
+        .props     = AV_CODEC_PROP_LOSSY,
+    },
     {
         .id        = AV_CODEC_ID_H261,
         .type      = AVMEDIA_TYPE_VIDEO,
